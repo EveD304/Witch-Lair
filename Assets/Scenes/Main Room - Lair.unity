@@ -1586,7 +1586,7 @@ PrefabInstance:
     - target: {fileID: 1871143873622387330, guid: 26d6c4342e0df764c948a24c0a3865ad,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.092
+      value: -3.641
       objectReference: {fileID: 0}
     - target: {fileID: 1871143873622387330, guid: 26d6c4342e0df764c948a24c0a3865ad,
         type: 3}
@@ -1647,6 +1647,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.r
       value: 0.427451
+      objectReference: {fileID: 0}
+    - target: {fileID: 8262582417082807542, guid: 26d6c4342e0df764c948a24c0a3865ad,
+        type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
