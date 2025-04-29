@@ -1677,7 +1677,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 386263400}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -0.22623, y: 0.877, z: 2.54}
   m_LocalScale: {x: 1.8595303, y: 1.9928586, z: 2.2628624}
   m_ConstrainProportionsScale: 0
@@ -1688,7 +1688,7 @@ Transform:
   - {fileID: 1648039588}
   - {fileID: 1200748653}
   - {fileID: 1080073005}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2019457508}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &426573101
 GameObject:
@@ -4416,6 +4416,11 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.9960785
       objectReference: {fileID: 0}
+    - target: {fileID: 8262582417082807542, guid: 26d6c4342e0df764c948a24c0a3865ad,
+        type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4882,7 +4887,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Version: 3
   m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 2
+  m_AdditionalLightsShadowResolutionTier: 0
   m_LightLayerMask: 1
   m_RenderingLayers: 1
   m_CustomShadowLayers: 0
@@ -4890,7 +4895,7 @@ MonoBehaviour:
   m_ShadowRenderingLayers: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
-  m_SoftShadowQuality: 0
+  m_SoftShadowQuality: 3
 --- !u!108 &1857847535
 Light:
   m_ObjectHideFlags: 0
@@ -4909,7 +4914,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -5341,6 +5346,7 @@ Transform:
   - {fileID: 331624800}
   - {fileID: 813762660}
   - {fileID: 440401660}
+  - {fileID: 386263401}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2051819964
@@ -5845,4 +5851,3 @@ SceneRoots:
   - {fileID: 322446748}
   - {fileID: 2019457508}
   - {fileID: 280296957}
-  - {fileID: 386263401}
