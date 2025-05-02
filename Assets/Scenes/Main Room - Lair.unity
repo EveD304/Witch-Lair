@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 28027924}
   - component: {fileID: 28027923}
   - component: {fileID: 28027922}
+  - component: {fileID: 28027928}
   m_Layer: 0
   m_Name: Mixer Container
   m_TagString: Untagged
@@ -407,9 +408,22 @@ Transform:
   m_LocalPosition: {x: -0.758, y: 0.891, z: 2.1733}
   m_LocalScale: {x: 0.101631604, y: 0.06467466, z: 0.101631604}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 853672195}
   m_Father: {fileID: 280296957}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &28027928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28027921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efb12e14d3f5c0d439b2d6822a3c9a6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &90674725
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2282,6 +2296,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flask small
       objectReference: {fileID: 0}
+    - target: {fileID: 2537286892806526247, guid: 8c15c7ea543b7304083c381c97ae17af,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3816156137055601247, guid: 8c15c7ea543b7304083c381c97ae17af,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -2352,6 +2371,11 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4202468927247973564, guid: 8c15c7ea543b7304083c381c97ae17af,
+        type: 3}
+      propertyPath: mixerCollider
+      value: 
+      objectReference: {fileID: 853672196}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3319,6 +3343,59 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5226912266984286847}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &853672194
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 853672195}
+  - component: {fileID: 853672196}
+  m_Layer: 0
+  m_Name: Pour trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &853672195
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853672194}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.6, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 28027927}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &853672196
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853672194}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &890651706
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4020,6 +4097,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flask big
       objectReference: {fileID: 0}
+    - target: {fileID: 2537286892806526247, guid: 8c15c7ea543b7304083c381c97ae17af,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3816156137055601247, guid: 8c15c7ea543b7304083c381c97ae17af,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -4090,6 +4172,11 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4202468927247973564, guid: 8c15c7ea543b7304083c381c97ae17af,
+        type: 3}
+      propertyPath: mixerCollider
+      value: 
+      objectReference: {fileID: 853672196}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5691,6 +5778,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4202468927247973564, guid: 8c15c7ea543b7304083c381c97ae17af,
+        type: 3}
+      propertyPath: mixerCollider
+      value: 
+      objectReference: {fileID: 853672196}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
