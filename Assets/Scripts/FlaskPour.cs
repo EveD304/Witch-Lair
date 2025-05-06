@@ -18,23 +18,23 @@ public class FlaskPour : MonoBehaviour
         if (transform.eulerAngles.x > 85 || transform.eulerAngles.x < -85)
         {
             //show liquid pouring
-            Debug.Log("Tilted");
+            //Debug.Log("Tilted");
             
         }
         else
         {
-            Debug.Log("Up");
+            //Debug.Log("Up");
         }
 
         if (transform.eulerAngles.z > 85 || transform.eulerAngles.z < -85)
         {
             //show liquid pouring
-            Debug.Log("Tilted");
+            //Debug.Log("Tilted");
 
         }
         else
         {
-            Debug.Log("Up");
+            //Debug.Log("Up");
         }
     }
 }
