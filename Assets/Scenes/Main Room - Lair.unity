@@ -3920,6 +3920,7 @@ GameObject:
   - component: {fileID: 1035124112}
   - component: {fileID: 1035124114}
   - component: {fileID: 1035124113}
+  - component: {fileID: 1035124115}
   m_Layer: 5
   m_Name: Subtitles
   m_TagString: Untagged
@@ -4044,6 +4045,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1035124111}
   m_CullTransparentMesh: 1
+--- !u!114 &1035124115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1035124111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51ae32f1b20de3c43b7e01f2f45067d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  content: {fileID: 1035124113}
+  i: 0
 --- !u!4 &1041242083 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 129553082794358915, guid: c53fc704704b011419ce62bb2004bfda,
@@ -5297,12 +5312,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 260583014f857ec4fb1683851c03fb94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  subtitles:
-  - Hi there!
-  - It's time to make some potions and have fun trying different combinations.
-  - How about you start by picking up one of the flasks sitting right there on your
-    left?
   content: {fileID: 1035124113}
+  subtitles: {fileID: 0}
 --- !u!4 &1801792239 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 129553082794358915, guid: c53fc704704b011419ce62bb2004bfda,
